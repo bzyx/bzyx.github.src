@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block title %}{{ SITENAME }} <small>[archive]</small>{% endblock %}
+
+{% block content %}
+    <h1>Archives for {{ SITENAME }}</h1>
+    <section id="content">
+    {% for year, date_year in dates|groupby( 'date.year' ) %}
+    <h2>{{ year }}</h2>
+      {% for month, articles in date_year|groupby( 'date.month' ) %}
+      <h3>{{ articles[ 0 ].date.strftime( '%B' ) }}</h3>
+      <ul>
+	  {% for article in articles %}
+	  <li>{{ article.title }} -  <a href="{{ article.url }}"> [{{ article.lang }}]</a>
+	  {% for translation in article.translations %}
+	  <a href="{{ SITEURL }}/{{ translation.url }}">[{{ translation.lang }}]</a>
+	  {% endfor %}
+	  
+	  </li>
+	  
+	  {% endfor %}
+      </ul>
+      {% endfor %}
+    {% endfor %}
+    </section>
+{% endblock %}
+
