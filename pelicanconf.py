@@ -10,7 +10,10 @@ THEME = 'pelican-bootstrap3'
 BOOTSTRAP_THEME = 'flatly'
 
 PLUGIN_PATH = 'pelican-plugins'
-PLUGINS = ['interlinks', 'sitemap', 'summary']
+PLUGINS = ['interlinks', 
+	   'sitemap', 
+	   'summary',
+	   'pelican_youtube',]
 #better_figures_and_images
 
 
