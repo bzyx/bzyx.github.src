@@ -1,6 +1,6 @@
 whoami
 #################
-:slug: about
+#:slug: about
 :lang: pl
 
 Kim jestem?
