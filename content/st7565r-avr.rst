@@ -128,8 +128,7 @@ przenosimy do Link with These Objects libdog.a.
 
    </p>
 
-| Teraz do projektu dodajemy plik dogm128.h, ja skopiowałem jego
-zawartość z takiego samego pliku w katalogu lib a następnie usunąłem
+Teraz do projektu dodajemy plik dogm128.h, ja skopiowałem jego zawartość z takiego samego pliku w katalogu lib a następnie usunąłem
 komentarz z linii #define DOGM128\_HW.
 
 Napisałem następujący prosty program bazując na przykładach dołączonych
@@ -380,3 +379,4 @@ Od `AVR - SMiW - AEI Projekt`_
    :target: https://picasaweb.google.com/lh/photo/t9aKCNE95qidCFCTJkXdttMTjNZETYmyPJy0liipFm0?feat=embedwebsite
 .. |image1| image:: https://lh3.googleusercontent.com/-CqovVS7HC0o/TtJBePIoxyI/AAAAAAAACu8/CIvwC249SfY/s288/IMG188.jpg
    :target: https://picasaweb.google.com/lh/photo/TgFKGjYkidpbXqrYrXSgntMTjNZETYmyPJy0liipFm0?feat=embedwebsite
+

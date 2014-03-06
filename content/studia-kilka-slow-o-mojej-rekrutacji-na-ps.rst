@@ -27,26 +27,9 @@ Wydział Automatyki, Elektroniki i Informatyki
 
    </p>
 
-| Liczba kandydatów wyniosła 10 000 na 7 500 przygotowanych miejsc przez
-Politechnikę Śląską
+Liczba kandydatów wyniosła 10 000 na 7 500 przygotowanych miejsc przez Politechnikę Śląską
 
-| 
-
-.. raw:: html
-
-   </p>
-
-| Wybrałem studia na wydziale Automatyki, Elektroniki i Informatyki i
-ledwie się na nie nie dostałem. Jestem świadom, że mój wynik z matury
-podstawowej z matematyki do najlepszych nie należy (66 %), ale biorąc
-pod uwagę warunki jego zdawania ( na zastrzyku przeciw bólowym, krótko
-po operacji) był sukcesem.
-
-| 
-
-.. raw:: html
-
-   </p>
+Wybrałem studia na wydziale Automatyki, Elektroniki i Informatyki i ledwie się na nie nie dostałem. Jestem świadom, że mój wynik z matury podstawowej z matematyki do najlepszych nie należy (66 %), ale biorąc pod uwagę warunki jego zdawania ( na zastrzyku przeciw bólowym, krótko po operacji) był sukcesem.
 
 Zadziwił mnie próg punktowy na informatykę w Gliwicach, 62 punkty, to
 pułap który prawie dyskwalifikuje wszystkich zadających maturę
@@ -57,86 +40,36 @@ pod wybrany prze zemnie wydział. Tu próg był zdecydowanie dla
 maturzystów zdających podstawową maturę. I tam też zostałem
 zakwalifikowany do przyjęcia.
 
-.. raw:: html
+|image0|
 
-   </p>
-
-| |image0|
-
-.. raw:: html
-
-   </p>
 
 Moje wyniki w systemie SOREK
 
-.. raw:: html
-
-   </p>
-
-| 
-
-.. raw:: html
-
-   </p>
-
-.. raw:: html
-
-   </p>
 
 Jak widać na powyższym zrzucie, zakwalifikowałbym się również na
 Elektronikę i Telekomunikację, ale uznałem że informatyka jest dla mnie
 ważniejsza, niż studiowanie w Gliwicach.
 
-.. raw:: html
-
-   </p>
 
 Co dalej?
 ~~~~~~~~~
 
-.. raw:: html
-
-   </p>
-
 Wypełniłem już kwestionariusz osobowy, wysłałem zdjęcie, i wydrukowałem
 podanie. W poniedziałek jadę do Gliwic, założyć "teczkę".
 
-.. raw:: html
-
-   </p>
-
-| Planuję zapytać się w komisji rekrutacyjnej, o możliwość ewentualnej
+Planuję zapytać się w komisji rekrutacyjnej, o możliwość ewentualnej
 możliwości zmiany i studiowania w Gliwicach.
-
-.. raw:: html
-
-   </p>
 
 Dlaczego? Ponieważ, poza tym że w moim Rybniku uczą informatyki, i tak
 na niektóre wykłady i laboratoria należy udać się do ośrodka
 macierzystego do Gliwic. To trochę mnie irytuje, wolałbym mieć wszystko
 na miejscu.
 
-.. raw:: html
-
-   </p>
-
-| Nie pozostało mi nic innego cieszyć się i radować z racji
+Nie pozostało mi nic innego cieszyć się i radować z racji
 zakwalifikowania do przyjęcia i dalszym następstwie czasu rozpoczęcia
 studiów...
 
-| 
-
-.. raw:: html
-
-   </p>
-
-... i czekać na rozwój wydarzeń w tej całkiem nowej dla mnie przygodzie,
-o której mało co wiem (czyt. o studiach).
-
-.. raw:: html
-
-   </p>
+... i czekać na rozwój wydarzeń w tej całkiem nowej dla mnie przygodzie, o której mało co wiem (czyt. o studiach).
 
 .. _terminarzem: http://rekrutacja.polsl.pl/terminarz.aspx
 .. _Politechnika Śląska: http://www.polsl.pl/

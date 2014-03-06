@@ -157,9 +157,9 @@ Stare butelki po "Tyskim" zamykane na korek.
 
    </p>
 
-| 
+|
 
-| 
+|
 
 I wiele wiele więcej, jedyne co może przeszkadzać to gabloty z
 odbijającej światło blachy, a także oświetlenie które do oglądania
@@ -355,9 +355,9 @@ Ciągle używana bocznica kolejowa, na którą przywożony jest `słód`_
 
    </p>
 
-| 
+|
 
-| 
+|
 
 .. raw:: html
 
@@ -404,8 +404,7 @@ To co piwosze lubią najbardziej...
 
    </p>
 
-| Po całym zwiedzaniu zostają rozdane kupony na degustację piwa, każda
-osoba odwiedzająca browar, może napić się piwa prosto z browaru w
+Po całym zwiedzaniu zostają rozdane kupony na degustację piwa, każda osoba odwiedzająca browar, może napić się piwa prosto z browaru w
 stylowym pubie.
 
 Miałem szczęście pić piwo które było spuszczone 18 godzin wcześniej z
@@ -558,3 +557,4 @@ Linki
    :target: http://picasaweb.google.pl/lh/photo/7bFoFCd4DMx-NrQFfXK_AQ?feat=embedwebsite
 .. |image12| image:: http://lh6.ggpht.com/_96nLxVgx5y8/SmGQ_qQ6MSI/AAAAAAAAB6Y/30jXxPhZlKI/s400/P1040968.JPG
    :target: http://picasaweb.google.pl/lh/photo/8kk0L5YpGtPeu7pOIBQPjw?feat=embedwebsite
+

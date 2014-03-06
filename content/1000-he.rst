@@ -250,26 +250,13 @@ domu, może być fajnym gadżetem i jego uzupełnieniem.
 
    </p>
 
-| Ja zakupiłem go ponieważ zależało mi na czymś mobilnym i całkowicie
-moim (tzn. rodzinka raczej nie będzie blokować). Z racji
-rozpoczynających się studiów informatycznych na Politechnice Śląskiej
-uznałem, że takie urządzono może się przydać. Gabaryty urządzenia są
-jego wielkim plusem, to samo akumulator, który jest naprawdę pojemy. Ja
-jestem z mojego sprzętu zadowolony, ponieważ spełnia on moje oczekiwania
-i byłem świadomy tego na co się decyduję.
-
-| 
-
-| 
+Ja zakupiłem go ponieważ zależało mi na czymś mobilnym i całkowicie moim (tzn. rodzinka raczej nie będzie blokować). Z racji rozpoczynających się studiów informatycznych na Politechnice Śląskiej uznałem, że takie urządzono może się przydać. Gabaryty urządzenia są jego wielkim plusem, to samo akumulator, który jest naprawdę pojemy. Ja jestem z mojego sprzętu zadowolony, ponieważ spełnia on moje oczekiwania i byłem świadomy tego na co się decyduję.
 
 .. raw:: html
 
    </p>
 
-| Jeśli masz jakieś pytanie, pisz śmiało w najwygodniejszy dla Ciebie
-sposób.
-
-| 
+Jeśli masz jakieś pytanie, pisz śmiało w najwygodniejszy dla Ciebie sposób.
 
 .. raw:: html
 
@@ -281,18 +268,15 @@ sposób.
 
    </p>
 
-| PS. W wielu opisach przy właściwościach sieci pisze tylko Wi-Fi
-standard: 802.11n , sam nie wiedziałem do końca ale teraz już wiem,
-komputer obsługuje także 802.11b i 802.11g.
+PS. W wielu opisach przy właściwościach sieci pisze tylko Wi-Fi standard: 802.11n , sam nie wiedziałem do końca ale teraz już wiem, komputer obsługuje także 802.11b i 802.11g.
 
-| 
+|
 
 .. raw:: html
 
    </p>
 
-| PPS. Ten fragment nie dotyczy bezpośrednio właściwości ASUS-a Eee PC
-1000HE.
+PPS. Ten fragment nie dotyczy bezpośrednio właściwości ASUS-a Eee PC 1000HE.
 
 Mój komputer zakupiłem z sklepu internetowego, znalezionego w jednej z
 porównywarek cen, jak się okazało kupiłem ostatnią sztukę w kolorze
@@ -306,13 +290,13 @@ chciałem, o czym marzyłem.
 
    </p>
 
-| 
+|
 
-| 
+|
 
-| 
+|
 
-| 
+|
 
 .. raw:: html
 
