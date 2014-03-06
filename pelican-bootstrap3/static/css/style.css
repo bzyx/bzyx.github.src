@@ -78,3 +78,8 @@ a, a:hover {
     white-space: inherit;
     border-radius: inherit;
 }
+
+img {
+    margin-top: 0.75em;
+    margin-bottom: : 0.75em;
+}

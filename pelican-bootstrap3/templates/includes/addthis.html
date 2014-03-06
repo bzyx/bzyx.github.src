@@ -1,14 +1,15 @@
-{% if ADDTHIS_PROFILE %}
-    <hr />
-    <!-- AddThis Button BEGIN -->
-    <div class="addthis_toolbox addthis_default_style">
-	<a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
-	<a class="addthis_button_tweet"></a>
-	<a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
-	<a class="addthis_counter addthis_pill_style"></a>
-    </div>
-    <script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
-    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid={{ ADDTHIS_PROFILE }}"></script>
-<!-- AddThis Button END -->
-{% endif %}
+<hr />
+<footer style="margin-top: 0px; padding-top: 0px; height: 35px; padding-bottom: 0px; margin-bottom: 0px;">
+      <span style="vertical-align: top; text-align: center; margin-right: 10px;">
+      <div class="fb-like" data-href="{{ SITEURL }}/{{ article.url }}" data-layout="button" data-action="like" data-show-faces="false" data-share="false"></div>
+      </span>
+
+      <span style="vertical-align: top;  text-align: center; margin-right: 10px;">
+      <a href="https://twitter.com/share" class="twitter-share-button" data-url="{{ SITEURL }}/{{ article.url }}" data-text="{{ article.title }} | {{ SITEURL }}/{{ article.url }}" data-related="bzyx" data-count="none">Tweet</a>
+      </span>
+      
+      <span style="vertical-align: top; text-align: center; margin-right: 10px;">
+      <div class="g-plusone" data-size="tall" data-annotation="none" data-href="{{ SITEURL }}/{{ article.url }}"></div>
+      </span>
+</footer>
 

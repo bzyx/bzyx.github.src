@@ -7,14 +7,19 @@ SITENAME = u'Marcin Jabrzyk'
 SITEURL = 'http://localhost:8000'
 
 THEME = 'pelican-bootstrap3'
+#BOOTSTRAP_THEME = 'superhero'
 BOOTSTRAP_THEME = 'flatly'
 
 PLUGIN_PATH = 'pelican-plugins'
 PLUGINS = ['interlinks',
 	   'sitemap',
 	   'summary',
+	   'clean_summary',
+	   'better_figures_and_images',
+	   'optimize_images',
+	   'code_include',
+	   'twitter_bootstrap_rst_directives',
 	   'pelican_youtube',]
-#better_figures_and_images
 
 SITEMAP = {
     'format': 'xml',
@@ -64,10 +69,10 @@ TAG_CLOUD_MAX_ITEMS = 10
 DISPLAY_PAGES_ON_MENU = True
 DISPLAY_CATEGORIES_ON_MENU = False
 
-GITHUB_USER = 'bzyx'
+GITHUB_USER = None
 #GITHUB_SHOW_USER_LINK = False
 #GITHUB_REPO_COUNT = True
-GITHUB_SKIP_FORK = True
+#GITHUB_SKIP_FORK = True
 
 ADDTHIS_PROFILE = 'ra-525841e026fe56fc'
 
@@ -96,4 +101,5 @@ EXTRA_PATH_METADATA = {'extras/CNAME': {'path': 'CNAME'},}
 #RELATIVE_URLS = True
 
 DISQUS_SITENAME = 'marcinjabrzyk'
+RESPONSIVE_IMAGES = True
 
