@@ -6,7 +6,7 @@ Hangouts, Talk, XMPP the "thing"
 :author: Marcin Jabrzyk
 :summary: At the beginning there was XMPP... after some time Gmail came and changed our view for things. Then Talk was created and every user of Gmail got his new communicator called Talk. And finally about yer a ago Google announced here comes Hangouts our new shinny IM. Don't worry be happy, but what if not...
 
-I was Jabber_ (or XMPP) like always using from the time I've first time heard about it. It was way better that the polish most popular IM service Gadu-Gadu now GG_ and it was always free and open source.
+I was using (or XMPP) 'like always' ie. from the time I've first time heard about it :) It was way better that the polish most popular IM service Gadu-Gadu now GG_ and it was always free and open source.
 But from time when Talk (around 2005) was annouced and everybody started using it (some time latter) things changed. There were people who only use Talk, some other only Jabber server or some both. All of them just want to communicate with each other. From the beginning there were some strange problems with Talk_ <-> XMPP with eg. authorization or not delivering messages and storing them in Gmail as history of conversations.
 Nowadays we've got Hangouts_ a better new IM from Google. I like it much, it works in my Gmail, on Google+ and my Android phone. It exchanges the history between different clients etc. It works as it should ;)
 
