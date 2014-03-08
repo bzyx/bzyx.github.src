@@ -25,6 +25,8 @@ CLOUDFILES_CONTAINER=my_cloudfiles_container
 
 DROPBOX_DIR=~/Dropbox/Public/
 
+LOCAL_DIR=~/Development/pelican/bzyx.github.io/
+
 DEBUG ?= 0
 ifeq ($(DEBUG), 1)
 	PELICANOPTS += -D
@@ -48,6 +50,7 @@ help:
 	@echo '   make s3_upload                   upload the web site via S3         '
 	@echo '   make cf_upload                   upload the web site via Cloud Files'
 	@echo '   make github                      upload the web site via gh-pages   '
+	@echo '   make local                       copy to special local folder       '
 	@echo '                                                                       '
 	@echo 'Set the DEBUG variable to 1 to enable debugging, e.g. make DEBUG=1 html'
 	@echo '                                                                       '
@@ -104,5 +107,8 @@ cf_upload: publish
 github: publish
 	ghp-import $(OUTPUTDIR)
 	git push origin gh-pages
+	
+local: publish
+	cp -r $(OUTPUTDIR)/* $(LOCAL_DIR)
 
-.PHONY: html help clean regenerate serve devserver publish ssh_upload rsync_upload dropbox_upload ftp_upload s3_upload cf_upload github
+.PHONY: html help clean regenerate serve devserver publish ssh_upload rsync_upload dropbox_upload ftp_upload s3_upload cf_upload github local
