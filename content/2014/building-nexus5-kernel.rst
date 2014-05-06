@@ -6,7 +6,7 @@ Building and booting Nexus 5 kernel
 :author: Marcin Jabrzyk
 :summary: I've read a lot of tutorials, articles, descriptions about build Android and non-Android Linux kernels. Many of them didn't work at all, some of them partly, and I will try to write one from the bottom up which will work for at least one device - Nexus 5.
 
-My description of building process will strongly base on this article which was a great help in whole process: http://pete.akeo.ie/2013/10/compiling-and-running-your-own-android.html
+My description of building process will be strongly based on this article which was a great help in whole process: http://pete.akeo.ie/2013/10/compiling-and-running-your-own-android.html
 
 
 Prerequisites:
@@ -16,10 +16,10 @@ Prerequisites:
 - Decent internet connection
 - git installed, with other classical tools needed for kernel building
 
-These are the thing I'll not cover in the article, as they are basics and not most important in whole process.
+These are the things I'll not cover in the article, as they are basic and not the most important in the whole process.
 
 You should really start with official Google guide here_ . I'll describe the process from my own perspective i.e. Ubuntu 14.04 x64 machine.
-So let's start with our tools. I assume you are working in some new empty folder. First is toolchain:
+So let's start with the tools. I assume you are working in some new empty folder. First is the toolchain:
 
 .. code-block:: bash
     :anchorlinenos:
@@ -35,14 +35,14 @@ So let's start with our tools. I assume you are working in some new empty folder
         Resolving deltas: 100% (89/89), done.
         Checking connectivity... done.
 
-The never 4.8 compilers suite seems to not working with Nexus 5 kernel sources at this moment. The same applies to androideabi version.
-Now we'll create a file with environment variables which are going to help us in simpling the process.
+The newer 4.8 compilers suite seems to not work with Nexus 5 kernel sources at this moment. The same applies to 4.7 *-androideabi* type.
+Now you'll create a file with environment variables which are going to help us with simplifying the process.
 
 .. code-block:: bash
 
     $ vim run_this_android.sh
 
-Fill it with:
+Set them to:
 
 .. code-block:: bash
 
@@ -54,7 +54,7 @@ Fill it with:
 
     export PATH=$PATH:$(pwd)/andorid_boot_tools_bin
 
-Make it runnable and source to current terminal window.
+Make it executable and source to current terminal window.
 
 .. code-block:: bash
 
@@ -76,7 +76,7 @@ Now it's time to clone the actual kernel sources (it will take some time).
         Resolving deltas: 100% (2753582/2753582), done.
         Checking connectivity... done.
 
-Next thing we do is change branch to the proper one (to get best result you shout checkout to a commit in your current kernel version 3.4.0-gXXXXXXX, where XXXXXXX is short of commit SHA-1).
+Next thing you'll do is change branch to the proper one (to get the best result you should checkout a commit in your current kernel version 3.4.0-gXXXXXXX, where XXXXXXX is short of a commit SHA-1).
 
 .. code-block:: bash
 
@@ -107,7 +107,7 @@ Next thing we do is change branch to the proper one (to get best result you shou
 
    $ git checkout origin/android-msm-hammerhead-3.4-kitkat-mr1
 
-Now we should have the code on which we can work :) So lets compile it, and check if it works for us.
+Now you should have the code on which you can work :) So compile it, and check if it works for you.
 In menuconfig *General setup ---> Local version - append to kernel release* you can append some string that you'll know that it's your kernel.
 
 .. code-block:: bash
@@ -126,14 +126,14 @@ If all went fine, at the end of output you'll find something like this:
     CAT     arch/arm/boot/zImage-dtb
     Kernel: arch/arm/boot/zImage-dtb is ready
 
-You have your kernel ready. On most embedded systems that will be the end of our work. Usually you'll copy the kernel to SD card or NFS location, and the board will boot. But on Android it's different. We need to prepare special boot partition which then we can boot using fastboot.
+You have your kernel ready. On most embedded systems that will be the end of your work. Usually you'll copy the kernel to SD card or NFS location, and the board will boot. But on Android it's different. You need to prepare special boot partition which then you can boot using fastboot.
 
-So we need to start by downloading the image of Android for our phone from Google sites.
-Go to Factory Images Nexus images_ site and download the image that corresponds to Android version that's on your phone. In my case it's 4.4.2_. Unpack it, then go inside and unpack the .zip archive. You need the boot.img file. Copy it to new folder inside directory where you downloaded the toolchain and kernel eg. *boot_img directory*.
+So you need to start from downloading the Android image for your phone from Google sites.
+Go to Nexus Factory Images site_ and download the image that matches to Android version that's on your phone. In my case it's 4.4.2_. Unpack it, then go inside the created directory and unpack the .zip archive. You need to get the boot.img file. Copy the extracted file to a new folder, inside the directory where you earlier downloaded the toolchain and the kernel. Eg. *mkidr boot_img* there.
 
-Next thing we'll do is to prepare some special image crafting tools that Pete_ Batard prepared for us and put on his github_. I've made a copy of them on mine_ too.
+Next thing you'll do is preparing some special image crafting tools that Pete_ Batard made for us and published on his github_. I've made a copy of them on mine_ too.
 
-Build this on different terminal window, if you've before sourced run_this_android.sh. On other way gcc will try to cross compile it for ARM architecture...
+Build this on a different terminal window, if you've before sourced run_this_android.sh. In the other case gcc will try to cross compile it for ARM architecture...
 
 .. code-block:: bash
 
@@ -166,7 +166,7 @@ Build this on different terminal window, if you've before sourced run_this_andro
     $ cp ../bootimg-tools/cpio/mkbootfs .
     $ cd ..
 
-It’s high time to unpack our boot partition from original image and prepare our own. So let's start.
+It’s high time to unpack the boot partition from original image and prepare your own. So let's start.
 
 .. code-block:: bash
 
@@ -179,7 +179,7 @@ It’s high time to unpack our boot partition from original image and prepare ou
         mkbootimg --base 0 --pagesize 2048 --kernel_offset 0x00008000 --ramdisk_offset 0x02900000 --second_offset 0x00f00000 --tags_offset 0x02700000 --cmdline 'console=ttyHSL0,115200,n8 androidboot.hardware=hammerhead  user_debug=31 maxcpus=2 msm_watchdog_v2.enable=1' --kernel kernel --ramdisk ramdisk.cpio.gz -o boot_img/boot.img
 
 
-Change the kernel to the one that we've compiled.
+Change the kernel to the one that you've compiled.
 
 .. code-block:: bash
 
@@ -188,8 +188,8 @@ Change the kernel to the one that we've compiled.
     $ ls
         andorid_boot_tools_bin  arm-eabi-4.7  boot_img  boot.img  bootimg-tools  kernel  msm  ramdisk.cpio.gz  run_this_android.sh
 
-In output of ls command we should see the boot.img file. If we have it, we've done :)
-So let's try our work if it works or not. Connect your phone using USB cable to your PC, be sure that you have USB debugging enabled.
+In output of ls command you should see the boot.img file. If you have it, you've done :)
+So let's try and check if it works or not. Connect your phone using USB cable to your PC, be sure that you have USB debugging enabled.
 
 .. code-block:: bash
 
@@ -199,8 +199,8 @@ So let's try our work if it works or not. Connect your phone using USB cable to 
     $ adb reboot bootloader
     $ sudo fastboot boot boot.img
 
-During this commands your phone will reboot to bootloader mode, next using fastboot command we'll copy the new boot image to RAM of the phone and boot it. **YOUR FLASH IS NOT TOUCHED IT'S 100% SAFE!**
-Now just check in settings what is version of your kernel. When you've done with hacking, and want to have the original just reboot your phone. Happy hacking!
+During this commands your phone will reboot to bootloader mode, next using fastboot command you'll copy the new boot image to RAM of the phone and then boot it. **YOUR FLASH IS NOT TOUCHED IT'S 100% SAFE!**
+Now just check in settings, what is version of your kernel. When you've done with hacking, and want to have the original just reboot your phone. Happy hacking!
 
 .. image:: |filename| /images/2014/Screenshot_2014-05-06-12-35-02.png
     :alt: "My settings in Android"
@@ -210,12 +210,12 @@ Now just check in settings what is version of your kernel. When you've done with
     <br/>
     <br/>
 
-Im really thankful to Pete Batard for his original article and the tools he prepared. It save me ~20 GB of download the AOSP and much of frustration. Thank you! (:
+I'm really thankful to Pete Batard for his original article and the tools he prepared. It save me ~20 GB of download the AOSP and much of frustration. Thank you! (:
 
 
 
 .. _here: http://source.android.com/source/building-kernels.html
-.. _images: https://developers.google.com/android/nexus/images#hammerhead
+.. _site: https://developers.google.com/android/nexus/images#hammerhead
 .. _4.4.2: https://dl.google.com/dl/android/aosp/hammerhead-kot49h-factory-02006b99.tgz
 .. _Pete: https://github.com/pbatard
 .. _github: https://github.com/pbatard/bootimg-tools
