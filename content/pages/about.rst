@@ -13,7 +13,7 @@ I've started this site to share my thoughts, write about my projects and things 
 There are no topics defined but it'll mostly be about the things I like most so embedded systems, Python and Linux.
 
 
-**If you want to get touch with me, feel free to contact:**
+**If you want to get in touch with me, feel free to contact:**
 
 *.mail:* `marcin.jabrzyk@gmail.com <mailto:marcin.jabrzyk+REMOVE_THIS+@gmail.com>`_
 
